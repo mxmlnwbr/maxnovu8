@@ -372,8 +372,8 @@ export default function Component() {
                     Event-Organisator
                   </h4>
                   <p className="text-gray-300">
-                    Vorstandsmitglied bei Rigibeats - organisiere Daydance
-                    Events auf der Rigi. Von der Planung bis zur Umsetzung!
+                    Vorstandsmitglied bei Rigibeats - Daydance Event auf der
+                    Rigi. Von der Planung bis zur Umsetzung!
                   </p>
                 </div>
               </div>
@@ -422,7 +422,7 @@ export default function Component() {
                 <div>
                   <h4 className="font-bold text-white mb-1">Weltenbummler</h4>
                   <p className="text-gray-300">
-                    Austauschsemester in Bordeaux, Surfen weltweit!
+                    Austauschsemester in Bordeaux, Wassersport weltweit!
                   </p>
                 </div>
               </div>
@@ -470,8 +470,7 @@ export default function Component() {
                 <div className="text-4xl">🎯</div>
                 <h3 className="text-xl font-bold text-white">Impact</h3>
                 <p className="text-gray-300">
-                  Von der Thesis-Matching- bis zur Wind-scope-Plattform - ich
-                  baue Technik, die Menschen wirklich hilft!
+                  Von der Thesis-Matching- bis zur Wind-scope-Plattform - mein Ziel ist es, echte Probleme zu lösen!
                 </p>
               </CardContent>
             </Card>
