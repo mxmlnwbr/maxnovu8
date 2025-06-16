@@ -1,6 +1,6 @@
 "use client";
 
-import { Code, Heart, Zap, Users, Target, Waves, Mountain } from "lucide-react";
+import { Code, Heart, Zap, Users, Target, Waves, Mountain, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -209,69 +209,77 @@ export default function Component() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-blue-500/20">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Waves className="h-8 w-8 text-blue-400" />
-                  <h3 className="text-xl font-bold">wind-scope</h3>
-                </div>
-                <p className="text-gray-300">
-                  Webcam & Forecast Collector für Windsportler. Weil ich es satt
-                  hatte, 20 Tabs für die perfekte Session zu öffnen! 🌊
-                </p>
-                <div className="text-sm text-blue-400">
-                  React.js • Next.js • TypeScript
-                </div>
-              </CardContent>
-            </Card>
+            <a href="https://wind-scope.vercel.app/" target="_blank">
+              <Card className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-blue-500/20 hover:bg-white/10">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Waves className="h-8 w-8 text-blue-400" />
+                    <h3 className="text-xl font-bold text-white">wind-scope</h3>
+                  </div>
+                  <p className="text-gray-300">
+                    Webcam & Forecast Collector für Windsportler. Weil ich es satt
+                    hatte, 20 Tabs für die perfekte Session zu öffnen! 🌊
+                  </p>
+                  <div className="text-sm text-blue-400">
+                    React.js • Next.js • TypeScript
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Mountain className="h-8 w-8 text-purple-400" />
-                  <h3 className="text-xl font-bold">mythenpark</h3>
-                </div>
-                <p className="text-gray-300">
-                  Neue Website für meinen Heimsnowpark in Schwyz. Lokale
-                  Verbundenheit trifft moderne Technik! ⛷️
-                </p>
-                <div className="text-sm text-purple-400">
-                  React.js • Next.js • TypeScript
-                </div>
-              </CardContent>
-            </Card>
+            <a href="https://mythenpark.vercel.app/" target="_blank">
+              <Card className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20 hover:bg-white/10">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Mountain className="h-8 w-8 text-purple-400" />
+                    <h3 className="text-xl font-bold text-white">mythenpark</h3>
+                  </div>
+                  <p className="text-gray-300">
+                    Neue Website für meinen Heimsnowpark in Schwyz. Lokale
+                    Verbundenheit trifft moderne Technik! ⛷️
+                  </p>
+                  <div className="text-sm text-purple-400">
+                    React.js • Next.js • TypeScript
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border-green-500/20">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Target className="h-8 w-8 text-green-400" />
-                  <h3 className="text-xl font-bold">TicketHub</h3>
-                </div>
-                <p className="text-gray-300">
-                  Event Ticketing Platform für unsere Rigibeats Daydance Events.
-                  Von der Idee bis zur Umsetzung! 🎵
-                </p>
-                <div className="text-sm text-green-400">
-                  React.js • Next.js • TypeScript
-                </div>
-              </CardContent>
-            </Card>
+            <a href="https://ticketing-platform-delta.vercel.app/" target="_blank">
+              <Card className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border-green-500/20 hover:bg-white/10">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Target className="h-8 w-8 text-green-400" />
+                    <h3 className="text-xl font-bold text-white">TicketHub</h3>
+                  </div>
+                  <p className="text-gray-300">
+                    Event Ticketing Platform für unsere Rigibeats Daydance Events.
+                    Von der Idee bis zur Umsetzung! 🎵
+                  </p>
+                  <div className="text-sm text-green-400">
+                    React.js • Next.js • TypeScript
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
 
-            <Card className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border-orange-500/20">
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-center gap-3">
-                  <Heart className="h-8 w-8 text-orange-400" />
-                  <h3 className="text-xl font-bold">theses.bf.uzh.ch</h3>
-                </div>
-                <p className="text-gray-300">
-                  Thesen-Plattform für die UZH - wo Studierende ihre
-                  Bachelor/Master finden! 🎓
-                </p>
-                <div className="text-sm text-orange-400">
-                  React.js • Next.js • Node.js • Azure
-                </div>
-              </CardContent>
-            </Card>
+            <a href="https://theses.bf.uzh.ch" target="_blank">
+              <Card className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border-orange-500/20 hover:bg-white/10">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Heart className="h-8 w-8 text-orange-400" />
+                    <h3 className="text-xl font-bold text-white">Thesen-Plattform</h3>
+                  </div>
+                  <p className="text-gray-300">
+                    Thesen-Plattform für die UZH - wo Studierende ihre
+                    Bachelor/Master finden! 🎓
+                  </p>
+                  <div className="text-sm text-orange-400">
+                    React.js • Next.js • Node.js • Azure
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
           </div>
         </div>
 
