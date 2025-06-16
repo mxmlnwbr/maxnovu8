@@ -57,11 +57,15 @@ export default function Component() {
             </div>
           </div>
 
-          {/* Right Column - Animated Character */}
+          {/* Right Column - Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-amber-400/20 to-blue-500/20 flex items-center justify-center">
-                <div className="text-8xl animate-bounce">🏄‍♂️</div>
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-amber-400/20 to-blue-500/20 flex items-center justify-center overflow-hidden border-2 border-amber-400">
+                <img 
+                  src="/images/me.jpg" 
+                  alt="Maximilian Weber" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-amber-400 rounded-full animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-500 rounded-full animate-pulse delay-300"></div>
