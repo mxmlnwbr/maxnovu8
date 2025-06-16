@@ -57,6 +57,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 This project is configured for easy deployment on Vercel.
 
+The live deployed version can be found at: [maxnovu8.vercel.app](https://maxnovu8.vercel.app)
+
 ## Contact
 
 Maximilian Weber - maximilian.weber@bluewin.ch
