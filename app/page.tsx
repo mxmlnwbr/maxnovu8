@@ -502,7 +502,7 @@ export default function Component() {
 
       {/* Footer */}
       <footer className="mt-20 border-t border-white/10 py-8 text-center text-gray-400">
-        <p>Mit ❤️ erstellt für das novu Team | Maximilian Weber, 2025</p>
+        <p>Mit ❤️ erstellt für das novu Team by mxmlnwbr</p>
       </footer>
     </div>
   );
