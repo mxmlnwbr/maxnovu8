@@ -1,10 +1,10 @@
 "use client";
 
-import { Code, Heart, Zap, Users, Target, Waves, Mountain, Link } from "lucide-react";
+import { Code, Heart, Zap, Users, Target, Waves, Mountain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import router from "next/router";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -485,27 +485,24 @@ export default function Component() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <Button className="bg-amber-400 text-black hover:bg-amber-500 px-8 py-3 text-lg font-medium">
-              📧 maximilian.weber@bluewin.ch
+            <Button className="text-white hover:bg-amber-500 px-8 py-3 text-lg font-medium hover:bg-amber-500">
+              <Link href="mailto:maximilian.weber@bluewin.ch" target="_blank">
+                📧 maximilian.weber@bluewin.ch
+              </Link>
             </Button>
             <Button
-              onClick={() => {
-                window.open(
-                  "https://www.linkedin.com/in/maximilian-weber-668a76157/",
-                  "_blank"
-                );
-              }}
-              className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium"
+              className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium hover:bg-amber-400"
             >
-              💼 LinkedIn Profil
+              <Link href="https://www.linkedin.com/in/maximilian-weber-668a76157/" target="_blank">
+                💼 LinkedIn Profil
+              </Link>
             </Button>
             <Button
-              onClick={() => {
-                window.open("https://github.com/mxmlnwbr", "_blank");
-              }}
-              className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium"
+              className="border-white/20 text-white hover:bg-white/10 px-8 py-3 text-lg font-medium hover:bg-amber-500"
             >
-              🐙 GitHub Portfolio
+              <Link href="https://github.com/mxmlnwbr" target="_blank">
+                🐙 GitHub Portfolio
+              </Link>
             </Button>
           </div>
         </div>
