@@ -420,12 +420,12 @@ export default function Component() {
 
         {/* Why novu */}
         <div className="mt-20 text-center space-y-8">
-          <h2 className="text-4xl font-bold flex items-center justify-center gap-4">
-            Warum{" "}
+          <h2 className="text-4xl font-bold flex flex-col items-center justify-center gap-4 md:flex-row md:items-center">
+            Warum
             <img
               src="/novu-logo.svg"
               alt="novu"
-              className="h-10 inline-block"
+              className="h-10 w-auto md:ml-4"
             />{" "}
             + Max = Perfect Match? 🤝
           </h2>
