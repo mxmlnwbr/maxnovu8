@@ -209,7 +209,7 @@ export default function Component() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <a href="https://wind-scope.vercel.app/" target="_blank">
+            <Link href="https://wind-scope.vercel.app/" target="_blank">
               <Card className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border-blue-500/20 hover:bg-white/10">
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
@@ -225,9 +225,9 @@ export default function Component() {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </Link>
 
-            <a href="https://mythenpark.vercel.app/" target="_blank">
+            <Link href="https://mythenpark.vercel.app/" target="_blank">
               <Card className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-purple-500/20 hover:bg-white/10">
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
@@ -243,9 +243,9 @@ export default function Component() {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </Link>
 
-            <a href="https://ticketing-platform-delta.vercel.app/" target="_blank">
+            <Link href="https://ticketing-platform-delta.vercel.app/" target="_blank">
               <Card className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 border-green-500/20 hover:bg-white/10">
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
@@ -261,9 +261,9 @@ export default function Component() {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </Link>
 
-            <a href="https://theses.bf.uzh.ch" target="_blank">
+            <Link href="https://theses.bf.uzh.ch" target="_blank">
               <Card className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border-orange-500/20 hover:bg-white/10">
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
@@ -279,7 +279,7 @@ export default function Component() {
                   </div>
                 </CardContent>
               </Card>
-            </a>
+            </Link>
           </div>
         </div>
 
