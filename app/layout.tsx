@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MaxNovu8",
-  description: "MaxNovu8",
+  title: "maxnovu8 | Personal Portfolio",
+  description: "A modern web application showcasing projects, skills, and professional experience.",
 };
 
 export default function RootLayout({
