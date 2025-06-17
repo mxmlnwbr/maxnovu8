@@ -294,7 +294,7 @@ export default function Component() {
                   </div>
                   <p className="text-gray-300">
                     Thesen-Plattform für die UZH - wo Studierende ihre
-                    Bachelor/Master finden! 🎓
+                    Bachelor/Master Thesen oder Betreuungen finden! 🎓
                   </p>
                   <div className="text-sm text-orange-400">
                     React.js • Next.js • Node.js • Azure
@@ -314,12 +314,16 @@ export default function Component() {
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
               <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Data Engineer @ Altoo AG
-                  </h3>
-                  <span className="text-amber-400 text-sm">05/2025</span>
+              <div className="flex-grow">
+                <div className="flex justify-between w-full mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">
+                      Data Engineer @ Altoo AG
+                    </h3>
+                  </div>
+                  <div className="min-w-[140px] text-right">
+                    <span className="text-amber-400 text-sm whitespace-nowrap">05/2025</span>
+                  </div>
                 </div>
                 <p className="text-gray-300">
                   Scala-Code für Automatisierungspipelines, Transaction
@@ -330,14 +334,16 @@ export default function Component() {
 
             <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
               <div className="w-3 h-3 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Software Engineer @ UZH
-                  </h3>
-                  <span className="text-blue-400 text-sm">
-                    07/2023 - 04/2025
-                  </span>
+              <div className="flex-grow">
+                <div className="flex justify-between w-full mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">
+                      Software Engineer @ UZH
+                    </h3>
+                  </div>
+                  <div className="min-w-[140px] text-right">
+                    <span className="text-blue-400 text-sm whitespace-nowrap">07/2023 - 04/2025</span>
+                  </div>
                 </div>
                 <p className="text-gray-300">
                   LLM Chatbot mit RAG, KlickerUZH Open Source, AI-Correction
@@ -348,14 +354,16 @@ export default function Component() {
 
             <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
               <div className="w-3 h-3 bg-green-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
-                  <h3 className="text-xl font-bold text-white">
-                    Deep Learning Intern @ Synpulse
-                  </h3>
-                  <span className="text-green-400 text-sm">
-                    10/2018 - 03/2019
-                  </span>
+              <div className="flex-grow">
+                <div className="flex justify-between w-full mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">
+                      Deep Learning Intern @ Synpulse
+                    </h3>
+                  </div>
+                  <div className="min-w-[140px] text-right">
+                    <span className="text-green-400 text-sm whitespace-nowrap">10/2018 - 03/2019</span>
+                  </div>
                 </div>
                 <p className="text-gray-300">
                   Text Classifier, AWS Hackathons, Deep Learning Seminars - mein
@@ -375,13 +383,15 @@ export default function Component() {
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
               <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
-                  <div>
+              <div className="flex-grow">
+                <div className="flex flex-col md:flex-row justify-between w-full mb-2">
+                  <div className="mb-2 md:mb-0">
                     <h3 className="text-xl font-bold text-white">Universität Zürich</h3>
-                    <p className="text-gray-300">Master in Computer Science (Major Data Science — Minor Informatics)</p>
+                    <p className="text-gray-300 break-words">Master in Computer Science (Major Data Science — Minor Informatics)</p>
                   </div>
-                  <span className="text-purple-400 text-sm whitespace-nowrap">Sept. 2019 - Juli 2023</span>
+                  <div className="min-w-[140px] md:text-right">
+                    <span className="text-purple-400 text-sm whitespace-nowrap">Sept. 2019 - Juli 2023</span>
+                  </div>
                 </div>
                 <p className="text-gray-300 mt-2">
                   Schwerpunkt auf Machine Learning, Data Science und KI-Anwendungen. Master Thesis über Explainable AI.
@@ -391,13 +401,15 @@ export default function Component() {
 
             <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
               <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
-                  <div>
+              <div className="flex-grow">
+                <div className="flex flex-col md:flex-row justify-between w-full mb-2">
+                  <div className="mb-2 md:mb-0">
                     <h3 className="text-xl font-bold text-white">Universität St. Gallen</h3>
-                    <p className="text-gray-300">Bachelor in Betriebswirtschaft</p>
+                    <p className="text-gray-300 break-words">Bachelor in Betriebswirtschaft</p>
                   </div>
-                  <span className="text-amber-400 text-sm whitespace-nowrap">Sept. 2015 - Sept. 2018</span>
+                  <div className="min-w-[140px] md:text-right">
+                    <span className="text-amber-400 text-sm whitespace-nowrap">Sept. 2015 - Sept. 2018</span>
+                  </div>
                 </div>
                 <p className="text-gray-300 mt-2">
                   Grundlegende betriebswirtschaftliche Ausbildung. Bachelor Thesis über Digital Prototyping Tools App (Design Thinking).
@@ -405,12 +417,14 @@ export default function Component() {
                 
                 {/* Nested Exchange Semester */}
                 <div className="mt-4 ml-6 border-l-2 border-cyan-400 pl-4">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
-                    <div>
+                  <div className="flex flex-col md:flex-row justify-between w-full mb-2">
+                    <div className="mb-2 md:mb-0">
                       <h4 className="text-lg font-bold text-white">KEDGE Business School</h4>
-                      <p className="text-gray-300">Austauschsemester</p>
+                      <p className="text-gray-300 break-words">Austauschsemester</p>
                     </div>
-                    <span className="text-cyan-400 text-sm whitespace-nowrap">Sept. 2017 - Dez. 2017</span>
+                    <div className="min-w-[140px] md:text-right">
+                      <span className="text-cyan-400 text-sm whitespace-nowrap">Sept. 2017 - Dez. 2017</span>
+                    </div>
                   </div>
                   <p className="text-gray-300 mt-1">
                     Auslandssemester in Bordeaux mit Fokus auf Supply Chain Management.
@@ -585,7 +599,7 @@ export default function Component() {
         </div>
 
         {/* Feedback Section */}
-        <div className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
+        <div className="mt-20 rounded-2xl p-8 border border-white/10">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-2">Dein <span className="text-amber-400">Feedback</span></h2>
             <p className="text-gray-300 max-w-2xl mx-auto">Ich freue mich über Feedback oder Fragen zu meinen Projekten! (Anonym)</p>
@@ -599,7 +613,7 @@ export default function Component() {
                 </div>
               ) : posts.length > 0 ? (
                 posts.map((post: {id: number, content: string}) => (
-                  <div key={post.id} className="bg-white/5 p-3 rounded">
+                  <div key={post.id} className="p-3 bg-black rounded">
                     <p className="text-gray-300">{post.content}</p>
                   </div>
                 ))
