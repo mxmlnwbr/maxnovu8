@@ -366,6 +366,61 @@ export default function Component() {
           </div>
         </div>
 
+        {/* Education Section */}
+        <div className="mt-20 space-y-8">
+          <h2 className="text-3xl font-bold text-center">
+            Meine <span className="text-amber-400">Ausbildung</span> 🎓
+          </h2>
+
+          <div className="space-y-6">
+            <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
+              <div className="w-3 h-3 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Universität Zürich</h3>
+                    <p className="text-gray-300">Master in Computer Science (Major Data Science — Minor Informatics)</p>
+                  </div>
+                  <span className="text-purple-400 text-sm whitespace-nowrap">Sept. 2019 - Juli 2023</span>
+                </div>
+                <p className="text-gray-300 mt-2">
+                  Schwerpunkt auf Machine Learning, Data Science und KI-Anwendungen. Master Thesis über Explainable AI.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-white/5 rounded-lg border border-white/10">
+              <div className="w-3 h-3 bg-amber-400 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
+                  <div>
+                    <h3 className="text-xl font-bold text-white">Universität St. Gallen</h3>
+                    <p className="text-gray-300">Bachelor in Betriebswirtschaft</p>
+                  </div>
+                  <span className="text-amber-400 text-sm whitespace-nowrap">Sept. 2015 - Sept. 2018</span>
+                </div>
+                <p className="text-gray-300 mt-2">
+                  Grundlegende betriebswirtschaftliche Ausbildung. Bachelor Thesis über Digital Prototyping Tools App (Design Thinking).
+                </p>
+                
+                {/* Nested Exchange Semester */}
+                <div className="mt-4 ml-6 border-l-2 border-cyan-400 pl-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between w-full mb-2">
+                    <div>
+                      <h4 className="text-lg font-bold text-white">KEDGE Business School</h4>
+                      <p className="text-gray-300">Austauschsemester</p>
+                    </div>
+                    <span className="text-cyan-400 text-sm whitespace-nowrap">Sept. 2017 - Dez. 2017</span>
+                  </div>
+                  <p className="text-gray-300 mt-1">
+                    Auslandssemester in Bordeaux mit Fokus auf Supply Chain Management.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Personal Side */}
         <div className="mt-20 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-2xl p-8 border border-blue-500/20">
           <h2 className="text-3xl font-bold text-center mb-8">
@@ -444,7 +499,7 @@ export default function Component() {
                 <div>
                   <h4 className="font-bold text-white mb-1">Weltenbummler</h4>
                   <p className="text-gray-300">
-                    Austauschsemester in Bordeaux, Wassersport weltweit!
+                    Liebe für die Schweiz 🇨🇭, aber auch für die Welt 🌍. Austauschsemester in Bordeaux, Wassersport weltweit!
                   </p>
                 </div>
               </div>
