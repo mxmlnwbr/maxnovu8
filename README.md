@@ -1,6 +1,6 @@
-# Maximilian Weber Portfolio
+# My Portfolio
 
-This is a personal portfolio website built with Next.js, showcasing Maximilian Weber's skills, projects, and experience. The site features a modern, responsive design with animated elements and a sleek dark theme.
+This is a personal portfolio website built with Next.js, showcasing my skills, projects, and experience for novu. The site features a modern, responsive design with animated elements and a sleek dark theme.
 
 ## Features
 
