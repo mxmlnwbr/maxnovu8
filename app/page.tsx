@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import Form from 'next/form'
 import { useState, useEffect } from "react";
 
 export default function Component() {
@@ -520,7 +519,7 @@ export default function Component() {
             </Button>
           </div>
         </div>
-        
+
         {/* Feedback Section */}
         <div className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
           <div className="text-center mb-10">
