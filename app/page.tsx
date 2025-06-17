@@ -10,11 +10,20 @@ import { useState, useEffect } from "react";
 export default function Component() {
   const [posts, setPosts] = useState<{id: number, content: string}[]>([]);
   const [inputContent, setInputContent] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setIsLoading(true);
     fetch("/api/posts")
       .then((res) => res.json())
-      .then((data) => setPosts(data));
+      .then((data) => {
+        setPosts(data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching posts:", error);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
@@ -524,12 +533,16 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-6 py-16 border-t border-white/10">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-2">Dein <span className="text-amber-400">Feedback</span></h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">Ich freue mich über Feedback oder Fragen zu meinen Projekten!</p>
+            <p className="text-gray-300 max-w-2xl mx-auto">Ich freue mich über Feedback oder Fragen zu meinen Projekten! (Anonym)</p>
           </div>
           
           <div className="bg-white/5 border border-white/10 rounded-lg p-6 shadow-lg">
             <div className="mb-6 max-h-48 overflow-y-auto space-y-3">
-              {posts.length > 0 ? (
+              {isLoading ? (
+                <div className="flex justify-center items-center py-8">
+                  <div className="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-amber-400"></div>
+                </div>
+              ) : posts.length > 0 ? (
                 posts.map((post: {id: number, content: string}) => (
                   <div key={post.id} className="bg-white/5 p-3 rounded">
                     <p className="text-gray-300">{post.content}</p>
